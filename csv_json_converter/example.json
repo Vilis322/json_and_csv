@@ -1,0 +1,12 @@
+[
+    {
+        "Planet": "Earth",
+        "Galaxy": "Milky Way",
+        "Star": "Sun"
+    },
+    {
+        "Planet": "Mars",
+        "Galaxy": "Milky Way",
+        "Star": "Sun"
+    }
+]
