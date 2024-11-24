@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "Valeria",
+        "Surname": "Jirohova",
+        "Age": "40",
+        "City": "Mote-Carlo",
+        "Citizenship": "Russian"
+    },
+    {
+        "Name": "Denis",
+        "Surname": "Ruder",
+        "Age": "33",
+        "City": "Lvov",
+        "Citizenship": "Ukraine"
+    },
+    {
+        "Name": "Umi",
+        "Surname": "Kodjima",
+        "Age": "33",
+        "City": "Tokyo",
+        "Citizenship": "Japan",
+        "Degree": "Bachelors"
+    },
+    {
+        "Name": "Farruh",
+        "Surname": "Istambuilov",
+        "Age": "35",
+        "City": "Batumi",
+        "Citizenship": "Georgia"
+    },
+    {
+        "Name": "Mary",
+        "Surname": "Jane",
+        "Age": "15",
+        "City": "New-York",
+        "Citizenship": "USA"
+    }
+]
