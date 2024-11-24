@@ -1,0 +1,8 @@
+Electric kettle	2	150
+Frying pan	1	150
+Toaster	3	90
+check line	2
+Microwave	1	700
+check line
+Blender	2	150
+check line

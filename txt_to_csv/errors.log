@@ -1,0 +1,9 @@
+2024-11-24 18:06:14,595 - ERROR - The line check line is an invalid, skipping this line.
+2024-11-24 18:06:14,596 - ERROR - The line check line is an invalid, skipping this line.
+2024-11-24 18:06:22,605 - ERROR - Invalid line 4: invalid literal for int() with base 10: 'here is not int'
+2024-11-24 18:08:59,322 - ERROR - The line check line	2 is an invalid, skipping this line.
+2024-11-24 18:08:59,323 - ERROR - The line check line is an invalid, skipping this line.
+2024-11-24 18:08:59,323 - ERROR - The line check line is an invalid, skipping this line.
+2024-11-24 18:09:50,757 - ERROR - The line check line	2 is an invalid, skipping this line.
+2024-11-24 18:09:50,758 - ERROR - The line check line is an invalid, skipping this line.
+2024-11-24 18:09:50,758 - ERROR - The line check line is an invalid, skipping this line.
