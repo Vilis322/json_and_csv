@@ -13,7 +13,7 @@
 + handling all possible exceptions.
 
 ## *Requirements*
-+ **Python 3,6** or higher.
++ **Python 3.6** or higher.
 
 ## *Structure*
 + **converter.py**: a file with basic logic for loading, processing and converting data;
