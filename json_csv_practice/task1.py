@@ -37,13 +37,13 @@ def task1() -> None:
         return
     except JSONDecodeError as e:
         logger.error(f"Error reading file '{file_path}': {e.msg} at line {e.lineno}, column {e.colno}")
-        print("An error within reading the file 'students.json'")
+        print(f"An error within reading the file '{file_path}'")
         return
 
     if not students:
-        logger.warning("File loaded, but student list is empty")
+        logger.warning(f"File {file_path} loaded, but student list is empty")
         logger.info("Task 1 stopped")
-        print("File 'students.json' is empty. Check the file and try again.")
+        print(f"File '{file_path}' is empty. Check the file and try again.")
         return
 
     print(f"\nTotal count of students: {len(students)}")
