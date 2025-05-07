@@ -41,7 +41,7 @@ def task2() -> None:
     total_sale_per_item = defaultdict(int)
     monthly_total_sales = defaultdict(int)
 
-    for i, row in enumerate(valid_sales):
+    for i, row in enumerate(sales):
         try:
             item = row["Item"]
             amount = int(row["Sum"])
@@ -62,3 +62,4 @@ def task2() -> None:
     print(f"\nMonthly sales totals:")
     for month, amount in sorted(monthly_total_sales.items()):
         print(f"{month}: {amount}¥")
+    logger.info("Task 2 finished")
