@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Анна",
+        "age": 20,
+        "city": "Москва",
+        "subjects": ["Python", "JavaScript"]
+    },
+    {
+        "name": "Петр",
+        "age": 22,
+        "city": "Санкт-Петербург",
+        "subjects": ["Python", "Java"]
+    },
+    {
+        "name": "Мария",
+        "age": 21,
+        "city": "Киев",
+        "subjects": ["JavaScript", "SQL"]
+    }
+]
