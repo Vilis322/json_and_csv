@@ -23,7 +23,7 @@ def task1() -> None:
     logger = getLogger("task1")
     logger.info("Task 1 started")
 
-    file_path = Path("students.json")
+    file_path = Path("students.json")  # Starts Step 1: reading data from file
 
     try:
         if not file_path.exists():
@@ -46,9 +46,9 @@ def task1() -> None:
         print(f"File '{file_path}' is empty. Check the file and try again.")
         return
 
-    print(f"\nTotal count of students: {len(students)}")
+    print(f"\nTotal count of students: {len(students)}")  # Ends Step 1, starts Step 2: counting amount of students
 
-    valid_students = []
+    valid_students = []  # Ends Step 2, starts Step 3: finding the oldest student and printing his data (name, age etc.)
 
     for i, student in enumerate(students):
         try:
@@ -70,7 +70,7 @@ def task1() -> None:
     print(f"His age is {oldest_student['age']}.")
     print(f"He is from {oldest_student['city']}")
 
-    all_subjects = set()
+    all_subjects = set()  # Ends Step 3, starts step 4: counting amount of student who learning certain subject
     for student in students:
         all_subjects.update(subject.lower() for subject in student.get("subjects", []))
 
