@@ -41,8 +41,8 @@ def task1() -> None:
         return
 
     if not students:
-        logger.warning("File loaded, but student list is empty.")
-        logger.info("Task 1 stopped.")
+        logger.warning("File loaded, but student list is empty")
+        logger.info("Task 1 stopped")
         print("File 'students.json' is empty. Check the file and try again.")
         return
 
@@ -60,8 +60,8 @@ def task1() -> None:
             logger.error(f"Error in element #{i}: {e}. Student data: {student}")
 
     if not valid_students:
-        logger.warning("There is no valid student list with valid key 'age'.")
-        logger.info("Task 1 stopped.")
+        logger.warning("There is no valid student list with valid key 'age'")
+        logger.info("Task 1 stopped")
         print("There is no valid student list with valid age. Check the file and try again.")
         return
 
@@ -79,7 +79,7 @@ def task1() -> None:
         subject = input("\nEnter a subject name to analyze or 'exit' to stop Task 1: ").strip().lower()
 
         if subject == "exit":
-            logger.info("Task 1 stopped by user request.")
+            logger.info("Task 1 stopped by user request")
             print("Exiting Task 1.")
             return
 
@@ -89,8 +89,8 @@ def task1() -> None:
                 for student in students
             )
             print(f"{count} student{'s' if count > 1 else ''} study '{subject}'.")
-            logger.info("Task 1 finished.")
+            logger.info("Task 1 finished")
             return
         else:
             print(f"No students study '{subject}'. Try again or type 'exit'.")
-            logger.warning(f"Subject '{subject}' not found among students.")
+            logger.warning(f"Subject '{subject}' not found among students")
