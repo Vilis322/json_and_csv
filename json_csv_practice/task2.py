@@ -6,7 +6,23 @@ from datetime import datetime
 
 
 def task2() -> None:
-    """Analyzes sales data from a CSV file and displays statistic."""
+    """Analyzes sales data from a CSV file and displays key statistics.
+
+    Reads data from 'sales.csv', processes each row, and displays:
+      - Total sum of all sales.
+      - Top-selling item with its cumulative sales.
+      - Total sales amount per month.
+
+    Invalid or incomplete rows (e.g., missing keys, bad data types, or wrong date format)
+    are skipped with a warning logged. The function assumes the date format to be '%Y-%m-%d'.
+
+    The function logs all critical steps and skips incorrect rows without interrupting execution.
+
+    Raises:
+        FileNotFoundError: If 'sales.csv' is not found.
+        ValueError: If a row contains invalid numeric or date format in 'Sum' or 'Date' fields.
+        KeyError: If required keys ('Item', 'Sum', 'Date') are missing in any row.
+    """
     print("\n=== TASK 2 STARTS ===")
     logger = getLogger("task2")
     logger.info("Task 2 started")
@@ -19,7 +35,7 @@ def task2() -> None:
 
         with file_path.open(encoding='utf-8') as file:
             reader = DictReader(file, skipinitialspace=True)
-            sales = [row for row in reader]
+            sales = list(reader)
     except FileNotFoundError as e:
         logger.error(f"Error opening file '{file_path}': {e}")
         print(f"{e} Check the file path and try again.")
@@ -57,6 +73,7 @@ def task2() -> None:
             continue
 
     top_item = max(total_sale_per_item.items(), key=lambda x: x[1])
+    logger.info(f"Top-selling item is '{top_item[0]}' with total sales of {top_item[1]}")
     print(f"\nTotal sales sum: {total_sales}¥")
     print(f"\nTop-selling item: {top_item[0]}. Total sales: {top_item[1]}¥")
     print(f"\nMonthly sales totals:")
