@@ -70,7 +70,7 @@ def task1() -> None:
     print(f"His age is {oldest_student['age']}.")
     print(f"He is from {oldest_student['city']}")
 
-    all_subjects = set()  # Ends Step 3, starts step 4: counting amount of student who learning certain subject
+    all_subjects = set()  # Ends Step 3, starts Step 4: counting amount of student who learning certain subject
     for student in students:
         all_subjects.update(subject.lower() for subject in student.get("subjects", []))
 
