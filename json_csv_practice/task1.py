@@ -4,7 +4,21 @@ from logging import getLogger
 
 
 def task1() -> None:
-    """"""
+    """Analyzes student data from a JSON file and displays key statistics.
+
+    Loads student data from 'students.json', logs errors if the file is missing
+    or corrupted, and performs three main operations:
+        - Displays the total number of students.
+        - Finds and prints the oldest student with valid age data.
+        - Prompts the user for a subject name and displays how many students study that subject.
+        Allows repeated input until a match or 'exit'.
+
+    Raises:
+    FileNotFoundError: If the file 'students.json' is not found.
+    JSONDecodeError: If the file contains invalid JSON.
+    KeyError: If a student dictionary is missing required fields.
+    TypeError: If a student's age has an invalid type.
+    """
     print("\n=== TASK 1 STARTS ===")
     logger = getLogger("task1")
     logger.info("Task 1 started")
