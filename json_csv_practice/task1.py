@@ -27,7 +27,7 @@ def task1() -> None:
 
     try:
         if not file_path.exists():
-            raise FileNotFoundError("File 'students.json' not found.")
+            raise FileNotFoundError(f"File '{file_path}' not found.")
 
         with file_path.open(encoding="utf-8") as file:
             students = load(file)
