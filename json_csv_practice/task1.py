@@ -57,7 +57,8 @@ def task1() -> None:
                 raise TypeError(f"Invalid type for age: {type(age)}")
             valid_students.append(student)
         except (KeyError, TypeError) as e:
-            logger.error(f"Error in element #{i}: {e}. Student data: {student}")
+            logger.warning(f"Error in element #{i}: {e}. Student data: {student}")
+            continue
 
     if not valid_students:
         logger.warning("There is no valid student list with valid key 'age'")
