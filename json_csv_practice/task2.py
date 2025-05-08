@@ -36,7 +36,7 @@ def task2() -> None:
         with file_path.open(encoding='utf-8') as file:
             reader = DictReader(file, skipinitialspace=True)
             sales = list(reader)
-    except (FileNotFoundError, Exception) as e:
+    except Exception as e:
         if isinstance(e, FileNotFoundError):
             logger.error(f"Error opening file '{file_path}': {e}")
             print(f"{e} Check the file path and try again.")
