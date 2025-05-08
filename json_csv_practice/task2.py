@@ -82,3 +82,4 @@ def task2() -> None:
     for month, amount in sorted(monthly_total_sales.items()):
         print(f"{month}: {amount}¥")
     logger.info("Task 2 finished")
+    return
