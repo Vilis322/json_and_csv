@@ -31,7 +31,7 @@ def task1() -> None:
 
         with file_path.open(encoding="utf-8") as file:
             students = load(file)
-    except (FileNotFoundError, JSONDecodeError) as e:
+    except Exception as e:
         if isinstance(e, FileNotFoundError):
             logger.error(f"Error opening file '{file_path}': {e}")
             print(f"{e} Check the path and try again.")
