@@ -48,7 +48,7 @@ def task2() -> None:
         return
 
     if not sales:
-        logger.warning("Sales file loaded but contains no data")
+        logger.warning(f"Sales file '{file_path}' loaded but contains no data")
         logger.info("Task 2 stopped")
         print(f"File '{file_path}' is empty. Check the file and try again.")
         return
