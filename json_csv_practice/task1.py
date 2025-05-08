@@ -33,10 +33,12 @@ def task1() -> None:
             students = load(file)
     except FileNotFoundError as e:
         logger.error(f"Error opening file '{file_path}': {e}")
+        logger.info("Task 1 stopped")
         print(f"{e} Check the path and try again.")
         return
     except JSONDecodeError as e:
         logger.error(f"Error reading file '{file_path}': {e.msg} at line {e.lineno}, column {e.colno}")
+        logger.info("Task 1 stopped")
         print(f"An error within reading the file '{file_path}'")
         return
 

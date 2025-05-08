@@ -38,10 +38,12 @@ def task2() -> None:
             sales = list(reader)
     except FileNotFoundError as e:
         logger.error(f"Error opening file '{file_path}': {e}")
+        logger.info("Task 2 stopped")
         print(f"{e} Check the file path and try again.")
         return
     except Exception as e:
         logger.error(f"Error reading file '{file_path}': {e}")
+        logger.info("Task 2 stopped")
         print(f"An error occurred while reading file '{file_path}'. Check the file and try again.")
         return
 
